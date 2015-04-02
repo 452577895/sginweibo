@@ -1,13 +1,13 @@
 package com.example.myweibo;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
+import android.view.animation.AnimationSet;
 import android.widget.ImageView;
 
 public class LogoActivity extends Activity {
@@ -22,12 +22,12 @@ public class LogoActivity extends Activity {
 		
 		AlphaAnimation animation = new AlphaAnimation(0.0f, 1.0f);
 		animation.setDuration(3000);
-		
+		AnimationSet animationSet = new AnimationSet(true);
+		animationSet.addAnimation(animation);
 		animation.setAnimationListener(new AnimationListener() {
 			
 			@Override
 			public void onAnimationStart(Animation animation) {
-				// TODO Auto-generated method stub
 				
 			}
 			
@@ -43,7 +43,9 @@ public class LogoActivity extends Activity {
 				startActivity(intent);*/
 			}
 		});
-		img_logo.setAnimation(animation);
+		img_logo.setAnimation(animationSet);
+
+	
 	}
 
 }
