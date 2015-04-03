@@ -1,6 +1,7 @@
 package com.example.myweibo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
@@ -24,6 +25,8 @@ public class LogoActivity extends Activity {
 		animation.setDuration(3000);
 		AnimationSet animationSet = new AnimationSet(true);
 		animationSet.addAnimation(animation);
+		img_logo.setAnimation(animationSet);
+
 		animation.setAnimationListener(new AnimationListener() {
 			
 			@Override
@@ -39,12 +42,10 @@ public class LogoActivity extends Activity {
 			
 			@Override
 			public void onAnimationEnd(Animation animation) {
-			/*	Intent intent = new Intent(LogoActivity.this,LoginActivity.class);
-				startActivity(intent);*/
+				Intent intent = new Intent(LogoActivity.this,LoginActivity.class);
+				startActivity(intent);
 			}
 		});
-		img_logo.setAnimation(animationSet);
-
 	
 	}
 
