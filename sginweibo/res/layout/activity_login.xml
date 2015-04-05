@@ -2,19 +2,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   	android:orientation="vertical" >
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/tv_demo"
+    <Button 
+        android:id="@+id/bt_add_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18dp"
-        android:text="我要登录登陆登陆哈哈哈" />
-    <Button 
-        android:id="@+id/bt_demo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="开启服务发送任务"
+        android:background="@drawable/add_account_bg"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
         />
-
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/head_bg"
+	    android:layout_marginTop="30dp"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    >
+	    
+	    <ImageView 
+	        android:id="@+id/img_user_head"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/user_head"
+	        />
+	</LinearLayout>
+	<Spinner 
+	    android:id="@+id/sp_select"
+	    android:layout_width="150dp"
+	    android:layout_height="50dp"
+	    android:background="@drawable/account_selete_bg"
+	    android:layout_gravity="center_horizontal"
+	    />
+	<Button 
+	    android:id="@+id/bt_login"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/btn_gb_bg"
+	    android:focusable="true"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="10dp"
+	    android:textColor="@color/white"
+	    android:text="登陆"
+	    />
 </LinearLayout>

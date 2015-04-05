@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <ImageView 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/info"
+        />
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第一次登陆需要您的新浪"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微博账号进行授权"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+        <Button 
+            android:id="@+id/bt_begin"
+		    android:layout_width="wrap_content"
+		    android:layout_height="30dp"
+		    android:background="@drawable/bt_begin"
+		    android:layout_gravity="center_horizontal"
+		    />
+        
+    </LinearLayout>
+		
+</LinearLayout>

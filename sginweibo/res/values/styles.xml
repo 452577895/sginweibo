@@ -16,5 +16,12 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-
+    <style name="myDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮在act上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
 </resources>

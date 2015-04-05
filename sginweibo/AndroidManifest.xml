@@ -8,6 +8,9 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="16" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -26,9 +29,22 @@
             android:name="com.example.myweibo.ui.LoginActivity"
             android:label="@string/title_activity_login" >
         </activity>
-        <service 
-            android:name="com.example.myweibo.logic.MainService"
-            ></service>
+
+        <service android:name="com.example.myweibo.logic.MainService" >
+        </service>
+
+        <activity
+            android:name="com.example.myweibo.ui.AuthActivity"
+            android:label="@string/title_activity_auth" >
+        </activity>
+        <activity
+            android:name="com.example.myweibo.ui.WebViewActivity"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+        <activity
+            android:name="com.example.myweibo.ui.AccesTokenActivity"
+            android:label="@string/title_activity_acces_token" >
+        </activity>
     </application>
 
 </manifest>

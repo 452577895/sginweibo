@@ -67,7 +67,7 @@ public class MainService extends Service implements Runnable {
 	 */
 	@Override
 	public void run() {
-		while (true) {
+		while (isloop) {
 			Task totask = null;
 			// 如果队列不为空，取出任务
 			if (!task.isEmpty()) {
