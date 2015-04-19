@@ -44,7 +44,7 @@ public class LogoActivity extends Activity {
 			
 			@Override
 			public void onAnimationEnd(Animation animation) {
-				Intent intent = new Intent(LogoActivity.this,LoginActivity.class);
+				Intent intent =  new Intent(LogoActivity.this,LoginActivity.class);
 				startActivity(intent);
 			}
 		});
